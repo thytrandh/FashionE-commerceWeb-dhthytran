@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logoTitle.png" type="image">
+    <title>RIODE - SHOP</title>
+     <!--  css -->
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <!--  <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--  end -->
+    <!--  icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <!--  end -->
+     <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!--  end -->
+</head>
+<body>
+
+  <!-- show-cart -->
+  <div class="show-cart-popup">
+    <div class="show-cart">
+      <div class="popup-header flex a-center j-between">
+        <h3>SHOPPING CART</h3>
+        <a href="" class="btn-close-cart-popup">
+          CLOSE
+          <i class="fal fa-long-arrow-right"></i>
+        </a>
+      </div>
+      <p class="no-product">No products in the cart.</p>
+      <div class="widget-shopping-cart">
+        <ul class="cart-list">
+        </ul>
+        <div class="cart-total flex a-center j-between">
+          <p>Subtotal:</p>
+          <div class="total">$<span class="total-price"></span>.00</div>
+        </div>
+        <div class="cart-button flex-column">
+            <a href="cart.html" class="btn-view-cart">View Cart</a>
+            <a href="cart.html" class="btn-check-out">GO TO CHECKOUT</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+     <!--  view-product -->
+ <div class="render-view-product-popup">
+   
+ </div>
+ 
+  <!-- account-popup -->
+  <div class="account-popup">
+    <div class="account">
+      <div class="close-popup">
+        <i class="fal fa-times"></i>
+      </div>
+      <div class="account-content">
+        <ul class="nav-tab flex a-center">
+          <li class="nav-item">
+            <a class="nav-login nav-active" href="">Login</a>
+          </li>
+          <li style="margin: 0px 5px;">or</li>
+          <li class="nav-item">
+            <a class="nav-register" href="">Register</a>
+          </li>
+        </ul>
+
+        <div class="login-box">
+          <div class="input-group flex-column">
+            <input type="email" id="email-login" name="email" placeholder="Username or Email Address *">
+            <input type="password" placeholder="Password *">
+          </div>
+  
+          <div class="checkbox-group flex a-center j-between">
+            <div class="flex a-center">
+              <input type="checkbox" id = "check">
+              <label for="check">Remember me</label>
+            </div>
+            <a href="">Lost your password?</a>
+          </div>
+  
+          <a href="" class="btn-login">LOGIN</a>
+  
+          <div class="divider">or Login With</div>
+  
+          <div class="contact">
+            <ul class="flex a-center">
+              <a href=""><li style="background: #dd4b39;"><i class="fab fa-google"></i></li></a>
+              <a href=""><li style="background: #3b5998;"><i class="fab fa-facebook-f"></i></li></a>
+              <a href=""><li style="background: #1da1f2;"><i class="fab fa-twitter"></i></li></a>
+            </ul>
+          </div>
+  
+        </div>
+
+        <div class="register-box">
+          <div class="input-group flex-column">
+            <input type="text" id="username" name="username" placeholder="Username *">
+            <input type="email" id="email-register" name="email" placeholder="Your Email Address *">
+            <input type="password" placeholder="Password *">
+          </div>
+  
+          <div class="checkbox-group flex a-center j-between">
+            <div class="flex a-center">
+              <input type="checkbox" id = "check">
+              <label for="check">I agree to the privacy policy</label>
+            </div>
+          </div>
+  
+          <a href="" class="btn-login">REGISTER</a>
+  
+          <div class="divider">or Register With</div>
+  
+          <div class="contact">
+            <ul class="flex a-center">
+              <a href=""><li style="background: #dd4b39;"><i class="fab fa-google"></i></li></a>
+              <a href=""><li style="background: #3b5998;"><i class="fab fa-facebook-f"></i></li></a>
+              <a href=""><li style="background: #1da1f2;"><i class="fab fa-twitter"></i></li></a>
+            </ul>
+          </div>
+  
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- modal-popup -->
+  <div class="modal-popup">
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h4>UP TO <span> 20% OFF</span></h4>
+          <h2>SIGN UP TO <span>RIODE</span></h2>
+          <p>Subscribe to the Riode eCommerce newsletter to receive timely updates from your favorite products.</p>
+          <div class="input-group flex a-center j-between">
+            <input type="email" id="email" name="email" placeholder="Email address here...">
+            <a  href="" class="btn-submit">SUBCRIBE</a>
+          </div>
+          <div class="checkbox-group flex a-center">
+            <input type="checkbox" id="cbox">
+            <label for="cbox">Don't show this popup again</label>
+          </div>
+        </div>
+      </div>
+      <div class="close-popup">
+        <i class="fal fa-times"></i>
+      </div>
+    </div>
+  </div>
+
+ <!--  top-banner -->
+  <div class="top-banner">
+    <div class="slider-header">
+      <header>
+        <div class="container flex a-center j-between">
+          <div class="header-left flex a-center">
+            <a class="logo" href="index.html"><img src="images/logoSecond.png" alt=""></a>
+            <nav>
+              <ul class="flex a-center j-between">
+                <!--  Home -->
+                <li><a href="index.html">Home</a></li>
+                <!-- Categories -->
+                <li>
+                  <a style="color:#2277cc;" href="shop.html">Categories</a>
+                  <i style="color:#2277cc;" class="bi bi-chevron-down"></i>
+                  <ul class="menu-dropdown">
+                    <li><a href="shop-shoses.html">Shoses</a></li>
+                    <li><a href="shop-bags.html">Bags</a></li>
+                    <li><a href="shop-accesories.html">Accesories</a></li>
+                    <li><a href="shop-clothing.html">Clothing</a></li>
+                  </ul>
+                </li>
+                <!-- Products -->
+                <li>
+                  <a href="shop.html">Products</a>
+                  <i class="bi bi-chevron-down"></i>
+                  <div class="mega-box">
+                    <div class="content flex j-between">
+                      <!-- row -->
+                      <div class="row flex-column">
+                        <p class="product">Shoses</p>
+                        <ul class="mega-links">
+                          <li><a href="shop-shoses-sneaker.html">Sneaker</a></li>
+                          <li><a href="shop-shoses-boots.html">Boots</a></li>
+                          <li><a href="shop-shoses-hightHeels.html">High Heels</a></li>
+                        </ul>
+                      </div>
+                      <!-- row -->
+                      <div class="row flex-column">
+                        <p class="product">Bags</p>
+                        <ul class="mega-links">
+                          <li><a href="shop-bags-backpacks.html">Backpacks</a></li>
+                          <li><a href="shop-bags-fashionbags.html">Fashion Bags</a></li>
+                          <li><a href="shop-bags-wallet.html">Wallet</a></li>
+                        </ul>
+                      </div>
+                      <!-- row -->
+                      <div class="row flex-column">
+                        <p class="product">Accesories</p>
+                        <ul class="mega-links">
+                          <li><a href="shop-accesories-watches.html">Watches</a></li>
+                          <li><a href="shop-accesories-belt.html">Belt</a></li>
+                          <li><a href="shop-accesories-glasses.html">Glasses</a></li>
+                          <li><a href="shop-accesories-sock.html">Sock</a></li>
+                          <li><a href="shop-accesories-jewelly.html">Jewelly</a></li>
+                          <li><a href="shop-accesories-gloves.html">Gloves</a></li>
+                        </ul>
+                      </div>
+                      <!-- row -->
+                      <div class="row flex-column">
+                        <p class="product">Clothing</p>
+                        <ul class="mega-links">
+                          <li><a href="shop-clothing-tops.html">Tops</a></li>
+                          <li><a href="shop-clothing-bottoms.html">Bottoms</a></li>
+                          <li><a href="shop-clothing-jackets.html">Jackets</a></li>
+                          <li><a href="shop-clothing-dresses.html">Dresses</a></li>
+                        </ul>
+                      </div>
+                      <!-- row -->
+                      <div class="row">
+                        <div class="row-img">
+                          <img src="images/bg-menu.jpg" alt="">
+                          <div class="title">
+                            <span>SALE</span>
+                            <p>70% off</p>
+                          </div>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </div>
+                </li>
+                <!-- Pages -->
+                <li>
+                    <a href="">Pages</a>
+                    <i class="bi bi-chevron-down"></i>
+                    <ul class="menu-dropdown">
+                      <li><a href="about-us.html">About Us</a></li>
+                      <li><a href="contact-us.html">Contact Us</a></li>
+                      <li><a href="wishlist.html">Wishlist</a></li>
+                      <li><a href="my-account.html">My Account</a></li>
+                    </ul>
+                </li>
+                <!--  Blog -->
+                <li><a href="blog.html">Blog</a></li>
+                 <!--  Blog -->
+                <li><a href="contact-us.html">Contact</a></li>
+  
+                <span class="divider"></span>
+  
+                <li class="search flex-column">
+                  <i class="bi bi-search">
+                  <div class="search-box">
+                    <form class="form-search">
+                      <input class="input-search" type="text" placeholder="Search your keyword...">
+                    </form>
+                    <ul class="search-dropdown">
+                    </ul>
+                  </div>
+                 </i>
+                </li>
+  
+              </ul>
+            </nav>
+          </div>
+          <div class="header-right  flex a-center j-between">
+            <div class="phone flex-column">
+              <span>NEED HELP?</span>
+              <p>(123)456-7890</p>
+            </div>
+            <span class="divider"></span>
+            <div class="icon-info flex a-center">
+              <a href="" class="click-account"><i class="fal fa-user"></i></a>
+              <a href=""><i class="fal fa-heart"></i></a>
+              <a href="" class="cart-slide-left cart">
+                <i class="fal fa-shopping-bag"></i>
+                <span>
+                  <div class="nos">0</div>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="title">
+        <h2>RIODE SHOP</h2>
+        <p><i class="fal fa-home-alt"></i> Home / <span>Riode Shop</span></p>
+    </div>
+    </div>
+  </div>
+
+ <!--  MAIN -->
+ <div class="main">
+     <div class="container flex j-between">
+         <div class="sidebar">
+             <div class="filter-actions flex a-center j-between">
+                 <a href="" class="btn-filter">
+                     FILTER
+                     <i class="fal fa-long-arrow-left"></i>
+                 </a>
+                 <a href="" class="btn-clean-all">Clean All</a>
+             </div>
+
+             <nav class="product-categories">
+                 <h3 class="widget-title">
+                   Product Categories
+                   <span class="toggle-btn"></span>
+                 </h3>
+                 <ul>
+                    <li class="categories">
+                         <a href="shop-shoses.html" class="first">Shoses
+                          <span class="far fa-chevron-down first-down"></span>
+                         </a>
+                         <ul class="el-categories first-show">
+                             <li><a href="shop-shoses-sneaker.html">Sneaker</a></li>
+                             <li><a href="shop-shoses-boots.html">Boots</a></li>
+                             <li><a href="shop-shoses-hightHeels.html">High Heels</a></li>
+                         </ul>
+                    </li>
+                    <li class="categories">
+                      <a href="shop-bags.html" class="second">Bags
+                        <span class="far fa-chevron-down second-down"></span>
+                      </a>
+                      <ul class="el-categories second-show">
+                        <li><a href="shop-bags-backpacks.html">Backpacks</a></li>
+                        <li><a href="shop-bags-fashionbags.html">Fashion Bags</a></li>
+                        <li><a href="shop-bags-wallet.html">Wallet</a></li>
+                      </ul>
+                    </li>
+                    <li class="categories">
+                      <a href="" class="third">Accesories
+                        <span class="far fa-chevron-down third-down"></span>
+                      </a>
+                      <ul class="el-categories third-show">
+                        <li><a href="shop-accesories-watches.html">Watches</a></li>
+                        <li><a href="shop-accesories-belt.html">Belt</a></li>
+                        <li><a href="shop-accesories-glasses.html">Glasses</a></li>
+                        <li><a href="shop-accesories-sock.html">Sock</a></li>
+                        <li><a href="shop-accesories-jewelly.html">Jewelly</a></li>
+                        <li><a href="shop-accesories-gloves.html">Gloves</a></li>
+                      </ul>
+                    </li>
+                    <li class="categories">
+                      <a href="" class="fourth">Clothing
+                        <span class="far fa-chevron-down fourth-down"></span>
+                      </a>
+                      <ul class="el-categories fourth-show">
+                          <li><a href="shop-clothing-tops.html">Tops</a></li>
+                          <li><a href="shop-clothing-bottoms.html">Bottoms</a></li>
+                          <li><a href="shop-clothing-jackets.html">Jackets</a></li>
+                          <li><a href="shop-clothing-dresses.html">Dresses</a></li>
+                      </ul>
+                    </li>
+                 </ul>
+             </nav>
+
+             <nav class="product-price">
+                <h3 class="widget-title">
+                  Filter by Price
+                  <span class="toggle-btn"></span>
+                </h3>
+                <ul class="filter-by-price">
+                    <div class="price-slider-range">
+                        <input class="input-range" type="range" name="" id="" min="̉60" max="210">
+                    </div>
+                    <div class="price-slider-amount">Price: $<span class="price-filter">60</span> — $210</div>
+                    <a href="" class="btn-filter-price">FILTER</a>
+                </ul>
+             </nav>
+
+             <nav class="product-size-color">
+              <h3 class="widget-title">
+                Size
+                <span class="toggle-btn"></span>
+              </h3>
+              <ul class="check-box flex-column">
+                <div class="check-box-group flex a-center">
+                  <input type="checkbox" id="extralarge" name="extralarge" value="extralarge">
+                  <label for="extralage">Extra Large</label>
+                </div>
+                <div class="check-box-group flex a-center">
+                  <input type="checkbox" id="large" name="large" value="large">
+                  <label for="large">Large</label>
+                </div>
+                <div class="check-box-group flex a-center">
+                  <input type="checkbox" id="medium" name="medium" value="medium">
+                  <label for="medium">Medium</label>
+                </div>
+                <div class="check-box-group flex a-center">
+                  <input type="checkbox" id="small" name="small" value="small">
+                  <label for="small">Small</label>
+                </div>
+              </ul>
+              </nav>
+
+              <nav class="product-size-color">
+                <h3 class="widget-title">
+                  Color
+                  <span class="toggle-btn"></span>
+                </h3>
+                <ul class="check-box flex-column">
+                  <div class="check-box-group flex a-center">
+                    <input type="checkbox" id="Bisque" name="Bisque" value="Bisque">
+                    <label for="Bisque">Bisque</label>
+                  </div>
+                  <div class="check-box-group flex a-center">
+                    <input type="checkbox" id="Darkgrey" name="Darkgrey" value="Darkgrey">
+                    <label for="Darkgrey">Darkgrey</label>
+                  </div>
+                  <div class="check-box-group flex a-center">
+                    <input type="checkbox" id="Brown" name="Brown" value="Brown">
+                    <label for="Brown">Light Brown</label>
+                  </div>
+                  <div class="check-box-group flex a-center">
+                    <input type="checkbox" id="Green" name="Green" value="Green">
+                    <label for="Green">Light Green</label>
+                  </div>
+                  <div class="check-box-group flex a-center">
+                    <input type="checkbox" id="Skyblue" name="Skyblue" value="Skyblue">
+                    <label for="Skyblue">Skyblue</label>
+                  </div>
+                  <div class="check-box-group flex a-center">
+                    <input type="checkbox" id="Yellow" name="Yellow" value="Yellow">
+                    <label for="Yellow">Yellow</label>
+                  </div>
+                </ul>
+              </nav>
+
+              <nav class="our-featured-sugges">
+                <h3 class="widget-title">
+                  Our Featured
+                  <span class="toggle-btn"></span>
+                </h3>
+                <div class="slider-our-featured-sugges owl-carousel owl-theme">
+                  <div class="render-product slider-our-featured-sugges-01">
+                  </div>
+                  <div class="render-product slider-our-featured-sugges-02">
+                 </div>
+                </div>
+             </nav>
+         </div>
+         <div class="main-content">
+           <div class="toolbox-top flex a-center j-between">
+             <div class="toolbox-left flex a-center">
+               <label for="">SORT BY :</label>
+               <select class="dropdown-select">
+                <option value="0">Default sorting</option>
+                <option value="1">Sort by popularity</option>
+                <option value="2">Sort by average rating</option>
+                <option value="3">Sort by latest</option>
+                <option value="4">Sort by price: low to high</option>
+                <option value="5">Sort by price: high to low</option>
+              </select>
+             </div>
+             <div class="toolbox-right">
+              <label for="">SHOW :</label>
+              <select class="dropdown-select">
+               <option value="0">9</option>
+               <option value="1">12</option>
+               <option value="2">24</option>
+               <option value="3">36</option>
+             </select>
+             </div>
+           </div>
+           <div class="show-product">
+            <div class="slider-product-list product-list flex j-between a-center ">
+              
+            </div>
+           </div>
+         </div>
+     </div>
+ </div>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top flex j-between">
+      <div class="footer-left flex j-between a-center">
+        <div class="logo">
+          <a href=""><img src="images/logo.png" alt=""></a>
+        </div>
+        <!--  Get In Touch -->
+        <div class="item">
+         <h4>Get In Touch</h4>
+         <ul class="content flex-column">
+           <li class="phone">
+             <h5>PHONE</h5>
+             <a href="">Toll Free (123) 456-7890</a>
+           </li>
+           <li class="email">
+             <h5>EMAIL</h5>
+             <a href="">riode@mail.com</a>
+           </li>
+           <li class="address">
+             <h5>ADDRESS</h5>
+             <p style="color: #fff;">123 Street, City, Country</p>
+           </li>
+           <li class="working-days">
+             <h5>WORKING DAYS / HOURS:</h5>
+             <p style="color: #fff;">Mon - Sun / 9:00 AM - 8:00 PM</p>
+           </li>
+         </ul>
+        </div>
+        <div class="item">
+         <h4>My Account</h4>
+         <ul class="content flex-column">
+           <li><a href="">Contact Us</a></li>
+           <li><a href="">Out Services</a></li>
+           <li><a href="">Payment Methods</a></li>
+           <li><a href="">Services Guide</a></li>
+           <li><a href="">Service Support</a></li>
+           <li><a href="">Privacy</a></li>
+           <li><a href="">About Riode</a></li>
+           <li> <a href="">Our Guarantees</a></li>
+         </ul>
+        </div>
+      </div>
+      <div class="footer-right">
+        <h4>Subscribe Newsletter</h4>
+        <ul class="flex-column">
+         <li><p>Subscribe to Riode eCommerce newsletter to receive timely updates from your favourite products.</p></li>
+         <li class="input-group flex a-center j-between">
+          <input type="email" id="email1" name="email" placeholder="Email address here...">
+          <a  href="" class="btn-subcribe">
+            <p>SUBCRIBE  <i class="bi bi-arrow-right"></i></p>
+          </a>
+        </li>
+        <li class="contact">
+          <ul class="flex">
+            <a href=""><li class="facebook"><i class="fab fa-facebook-f"></i></li></a>
+            <a href=""><li class="twitter"><i class="fab fa-twitter"></i></li></a>
+            <a href=""><li class="instagram"><i class="fab fa-instagram"></i></li></a>
+            <a href=""><li class="google"><i class="fab fa-google-plus-g"></i></li></a>
+            <a href=""><li class="pinterest"><i class="fab fa-pinterest-p"></i></li></a>
+          </ul>
+        </li>
+       </ul>
+      </div>
+    </div>
+    <div class="footer-bottom flex a-center j-between">
+      <p>Copyright © 2021 Riode Store. All Rights Reserved.</p>
+      <div class="pay">
+        <img src="https://d-themes.com/wordpress/riode/sport/wp-content/uploads/sites/97/2021/01/payment-logo.png" alt="">
+      </div>
+    </div>
+  </div>
+</footer>
+    
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/Product/arr-product.js"></script>
+<script src="js/Shop/slidebar.js"></script>
+<script src="js/Shop/shop.js"></script>
+<script src="js/main.js"></script>
+
+</html>

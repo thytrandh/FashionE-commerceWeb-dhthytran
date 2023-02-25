@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <!--  css -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <!--  end -->
+  <!--  icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+  <!--  end -->
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <!--  end -->
+  <link rel="shortcut icon" href="images/logoTitle.png" type="image">
+  <title>RIODE</title>
+</head>
+
+<body>
+
+  <!-- show-cart -->
+  <div class="show-cart-popup">
+    <div class="show-cart">
+      <div class="popup-header flex a-center j-between">
+        <h3>SHOPPING CART</h3>
+        <a href="" class="btn-close-cart-popup">
+          CLOSE
+          <i class="fal fa-long-arrow-right"></i>
+        </a>
+      </div>
+      <p class="no-product">No products in the cart.</p>
+      <div class="widget-shopping-cart">
+        <ul class="cart-list">
+        </ul>
+        <div class="cart-total flex a-center j-between">
+          <p>Subtotal:</p>
+          <div class="total">$<span class="total-price"></span>.00</div>
+        </div>
+        <div class="cart-button flex-column">
+            <a href="cart.html" class="btn-view-cart">View Cart</a>
+            <a href="cart.html" class="btn-check-out">GO TO CHECKOUT</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+ <!--  view-product -->
+ <div class="render-view-product-popup">
+</div>
+
+  <!-- account-popup -->
+  <div class="account-popup">
+    <div class="account">
+      <div class="close-popup">
+        <i class="fal fa-times"></i>
+      </div>
+      <div class="account-content">
+        <ul class="nav-tab flex a-center">
+          <li class="nav-item">
+            <a class="nav-login nav-active" href="">Login</a>
+          </li>
+          <li style="margin: 0px 5px;">or</li>
+          <li class="nav-item">
+            <a class="nav-register" href="">Register</a>
+          </li>
+        </ul>
+
+        <div class="login-box">
+          <div class="input-group flex-column">
+            <input type="email" id="email-login" name="email" placeholder="Username or Email Address *">
+            <input type="password" placeholder="Password *">
+          </div>
+  
+          <div class="checkbox-group flex a-center j-between">
+            <div class="flex a-center">
+              <input type="checkbox" id = "check">
+              <label for="check">Remember me</label>
+            </div>
+            <a href="">Lost your password?</a>
+          </div>
+  
+          <a href="" class="btn-login">LOGIN</a>
+  
+          <div class="divider">or Login With</div>
+  
+          <div class="contact">
+            <ul class="flex a-center">
+              <a href=""><li style="background: #dd4b39;"><i class="fab fa-google"></i></li></a>
+              <a href=""><li style="background: #3b5998;"><i class="fab fa-facebook-f"></i></li></a>
+              <a href=""><li style="background: #1da1f2;"><i class="fab fa-twitter"></i></li></a>
+            </ul>
+          </div>
+  
+        </div>
+
+        <div class="register-box">
+          <div class="input-group flex-column">
+            <input type="text" id="username" name="username" placeholder="Username *">
+            <input type="email" id="email-register" name="email" placeholder="Your Email Address *">
+            <input type="password" placeholder="Password *">
+          </div>
+  
+          <div class="checkbox-group flex a-center j-between">
+            <div class="flex a-center">
+              <input type="checkbox" id = "check">
+              <label for="check">I agree to the privacy policy</label>
+            </div>
+          </div>
+  
+          <a href="" class="btn-login">REGISTER</a>
+  
+          <div class="divider">or Register With</div>
+  
+          <div class="contact">
+            <ul class="flex a-center">
+              <a href=""><li style="background: #dd4b39;"><i class="fab fa-google"></i></li></a>
+              <a href=""><li style="background: #3b5998;"><i class="fab fa-facebook-f"></i></li></a>
+              <a href=""><li style="background: #1da1f2;"><i class="fab fa-twitter"></i></li></a>
+            </ul>
+          </div>
+  
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+
+   <!-- modal-popup -->
+   <div class="modal-popup">
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h4>UP TO <span> 20% OFF</span></h4>
+          <h2>SIGN UP TO <span>RIODE</span></h2>
+          <p>Subscribe to the Riode eCommerce newsletter to receive timely updates from your favorite products.</p>
+          <div class="input-group flex a-center j-between">
+            <input type="email" id="email" name="email" placeholder="Email address here...">
+            <a  href="" class="btn-submit">SUBCRIBE</a>
+          </div>
+          <div class="checkbox-group flex a-center">
+            <input type="checkbox" id="cbox">
+            <label for="cbox">Don't show this popup again</label>
+          </div>
+        </div>
+      </div>
+      <div class="close-popup">
+        <i class="fal fa-times"></i>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="to-top">
+    <div class="box">
+      <i class="fal fa-arrow-up"></i>
+    </div>
+  </div>
+
+ <!--  top-banner -->
+  <div class="top-banner">
+    <div class="slider-header">
+      <header>
+        <div class="container flex a-center j-between">
+          <div class="header-left flex a-center">
+            <a class="logo" href="index.html"><img src="images/logo.png" alt=""></a>
+            <nav>
+              <ul class="flex a-center j-between">
+                <!--  Home -->
+                <li><a  href="index.html" style="color:#2277cc;">Home</a></li>
+                <!-- Categories -->
+                <li>
+                  <a href="shop.html">Categories</a>
+                  <i class="bi bi-chevron-down"></i>
+                  <ul class="menu-dropdown">
+                    <li><a href="shop-shoses.html">Shoses</a></li>
+                    <li><a href="shop-bags.html">Bags</a></li>
+                    <li><a href="shop-accesories.html">Accesories</a></li>
+                    <li><a href="shop-clothing.html">Clothing</a></li>
+                  </ul>
+                </li>
+                <!-- Products -->
+                <li>
+                  <a href="shop.html">Products</a>
+                  <i class="bi bi-chevron-down"></i>
+                  <div class="mega-box">
+                    <div class="content flex j-between">
+                      <!-- row -->
+                      <div class="row flex-column">
+                        <p class="product">Shoses</p>
+                        <ul class="mega-links">
+                          <li><a href="shop-shoses-sneaker.html">Sneaker</a></li>
+                          <li><a href="shop-shoses-boots.html">Boots</a></li>
+                          <li><a href="shop-shoses-hightHeels.html">High Heels</a></li>
+                        </ul>
+                      </div>
+                      <!-- row -->
+                      <div class="row flex-column">
+                        <p class="product">Bags</p>
+                        <ul class="mega-links">
+                          <li><a href="shop-bags-backpacks.html">Backpacks</a></li>
+                          <li><a href="shop-bags-fashionbags.html">Fashion Bags</a></li>
+                          <li><a href="shop-bags-wallet.html">Wallet</a></li>
+                        </ul>
+                      </div>
+                      <!-- row -->
+                      <div class="row flex-column">
+                        <p class="product">Accesories</p>
+                        <ul class="mega-links">
+                          <li><a href="shop-accesories-watches.html">Watches</a></li>
+                          <li><a href="shop-accesories-belt.html">Belt</a></li>
+                          <li><a href="shop-accesories-glasses.html">Glasses</a></li>
+                          <li><a href="shop-accesories-sock.html">Sock</a></li>
+                          <li><a href="shop-accesories-jewelly.html">Jewelly</a></li>
+                          <li><a href="shop-accesories-gloves.html">Gloves</a></li>
+                        </ul>
+                      </div>
+                      <!-- row -->
+                      <div class="row flex-column">
+                        <p class="product">Clothing</p>
+                        <ul class="mega-links">
+                          <li><a href="shop-clothing-tops.html">Tops</a></li>
+                          <li><a href="shop-clothing-bottoms.html">Bottoms</a></li>
+                          <li><a href="shop-clothing-jackets.html">Jackets</a></li>
+                          <li><a href="shop-clothing-dresses.html">Dresses</a></li>
+                        </ul>
+                      </div>
+                      <!-- row -->
+                      <div class="row">
+                        <div class="row-img">
+                          <img src="images/bg-menu.jpg" alt="">
+                          <div class="title">
+                            <span>SALE</span>
+                            <p>70% off</p>
+                          </div>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </div>
+                </li>
+                <!-- Pages -->
+                <li>
+                    <a href="">Pages</a>
+                    <i class="bi bi-chevron-down"></i>
+                    <ul class="menu-dropdown">
+                      <li><a href="about-us.html">About Us</a></li>
+                      <li><a href="contact-us.html">Contact Us</a></li>
+                      <li><a href="wishlist.html">Wishlist</a></li>
+                      <li><a href="my-account.html">My Account</a></li>
+                    </ul>
+                </li>
+                <!--  Blog -->
+                <li><a href="blog.html">Blog</a></li>
+                 <!--  Blog -->
+                <li><a href="contact-us.html">Contact</a></li>
+  
+                <span class="divider"></span>
+  
+                <li class="search flex-column">
+                    <i class="bi bi-search">
+                    <div class="search-box">
+                      <form class="form-search">
+                        <input class="input-search" type="text" placeholder="Search your keyword...">
+                      </form>
+                      <ul class="search-dropdown">
+                      </ul>
+                    </div>
+                   </i>
+                </li>
+  
+              </ul>
+            </nav>
+          </div>
+          <div class="header-right  flex a-center j-between">
+            <div class="phone flex-column">
+              <span>NEED HELP?</span>
+              <p>(123)456-7890</p>
+            </div>
+            <span class="divider"></span>
+            <div class="icon-info flex a-center">
+              <a href="" class="click-account"><i class="fal fa-user"></i></a>
+              <a href=""><i class="fal fa-heart"></i></a>
+              <a href="" class="cart-slide-left cart">
+                <i class="fal fa-shopping-bag"></i>
+                <span>
+                  <div class="nos">0</div>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="slider-top-banner owl-carousel owl-theme">
+         <!-- Item -->
+         <div class="item">
+          <img src="images/Page Home/Top Banner/banner-01.jpg" alt="">
+          <div class="content flex a-center j-between" style=" right: 0; transform: translate(-20%,-50%);">
+            <div class="content-title">
+              <h4>FROM ONLINE STORE</h4>
+              <h3>Originals Comper Star. Watches</h3>
+              <div class="divider"></div>
+              <p>Free Shipping on all orders over<span> $555.00</span></p>
+              <a href="shop-accesories-watches.html">
+                <button class="btn-shop-now a-center">
+                  SHOP NOW
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+         <!-- Item -->
+         <div class="item">
+          <img src="images/Page Home/Top Banner/banner-02.jpg" alt="">
+          <div class="content flex a-center j-between" style=" left: 0; transform: translate(30%,-50%);">
+            <div class="content-title">
+              <h4 style="color: #2277cc;">UP TO 50% OFF</h4>
+              <h3>Discover our Fashion Collection</h3>
+              <div class="divider"></div>
+              <p>Get Free Shipping on all orders over<span> $75.00</span></p>
+              <a href="shop-clothing.html">
+                <button class="btn-shop-now a-center">
+                  SHOP NOW
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+         <!-- Item -->
+         <!-- style="height: 806px;" -->
+         <div class="item banner03">
+          <img src="images/Page Home/Top Banner/banner-03.png" alt="">
+          <div class="content flex a-center j-between">
+            <div class="content-title">
+              <h4>New Arivals</h4>
+              <h3>Essentials for all the ways you move</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+              <a href="shop-shoses-sneaker.html">
+                <button class="btn-shop-now a-center">
+                  SHOP NOW
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- collection-banner -->
+    <div class="collection-banner slider-collection-banner owl-carousel owl-theme">
+      <div class="item-1">
+        <a href="shop-shoses-sneaker.html">
+          <img src="images/Page Home/Collection Banner/img-01.jpg" alt="">
+        </a>
+        <div class="content-type01">
+          <h4>FOOTWEAR</h4>
+          <h3>NEW DESIGN</h3>
+          <p>From $16.00</p>
+          <a href="shop-shoses-sneaker.html" class="btn-shop-now a-center flex">
+            SHOP NOW
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="item-2">
+        <a href="shop-accesories-gloves.html">
+          <img src="images/Page Home/Collection Banner/img-02.jpg" alt="">
+        </a>
+        <div class="content-type02">
+          <h3>NEW ARRIVALS</h3>
+          <p>11 PRODUCTS</p>
+          <a href="shop-accesories-gloves.html" class="btn-shop-now a-center flex">
+            SHOP NOW
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="item-3">
+        <a href="shop-shoses-hightHeels.html">
+          <img src="images/Page Home/Collection Banner/img-03.jpg" alt="">
+        </a>
+        <div class="content-type01">
+          <h4>BIG SALE</h4>
+          <h3>MID SEASON'S</h3>
+          <p>Up to 70% Off</p>
+          <a href="shop-shoses-hightHeels.html" class="btn-shop-now a-center flex">
+            SHOP NOW
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="item-4">
+        <a href="shop-clothing-jackets.html">
+          <img src="images/Page Home/Collection Banner/img-04.jpg" alt="">
+        </a>
+        <div class="content-type02">
+          <h3>TOPS & JACKET</h3>
+          <p>0 PRODUCTS</p>
+          <a href="shop-clothing-jackets.html" class="btn-shop-now a-center flex">
+            SHOP NOW
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+<!-- best-sellers -->
+<div class="best-sellers">
+  <div class="container">
+    <h2 class="main-title animateFadeFromBottom">
+      <b>Best Sellers</b>
+      <em>Best Sellers</em>
+    </h2>
+   <!--  owl-carousel owl-theme -->
+    <div class="slider-best-sellers product-list owl-carousel owl-theme">
+    </div>
+
+  </div>
+</div>
+
+<!-- our-categories -->
+<div class="our-categories ">
+  <div class="container">
+    <h2 class="main-title animateFadeFromBottom">
+      <b>Our Categories</b>
+      <em>Our Categories</em>
+    </h2>
+   <!--  owl-carousel owl-theme -->
+    <div class="categories-list flex a-center j-between">
+      <a href="shop-shoses.html">
+        <div class="item">
+          <img src="images/Page Home/Background Categories/bg-01.jpg" alt="">
+          <button>
+            <h4>SHOSES</h4>
+            <a class="btn-categories shake" href="">5 Products</a>
+          </button>
+        </div>
+      </a>
+
+      <a href="shop-bags.html">
+        <div class="item">
+          <img src="images/Page Home/Background Categories/bg-02.jpg" alt="">
+          <button>
+            <h4>BAGS</h4>
+            <a class="btn-categories shake" href="">8 Products</a>
+          </button>
+        </div>
+      </a>
+      
+      <a href="shop-accesories.html">
+        <div class="item">
+          <img src="images/Page Home/Background Categories/bg-03.jpg" alt="">
+          <button>
+            <h4>ACCESSORIES</h4>
+            <a class="btn-categories shake" href="">7 Products</a>
+          </button>
+        </div>
+      </a>
+
+      <a href="shop-clothing.html">
+        <div class="item">
+          <img src="images/Page Home/Background Categories/bg-04.jpg" alt="">
+          <button>
+            <h4>CLOTHING</h4>
+            <a class="btn-categories shake" href="">11 Products</a>
+          </button>
+        </div>
+      </a>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- Our Featured -->
+<div class="our-featured ">
+  <div class="container">
+    <h2 class="main-title animateFadeFromBottom">
+      <b>Our Featured</b>
+      <em>Our Featured</em>
+    </h2>
+    <div class="product-list slider-our-featured owl-carousel owl-theme">
+    </div>
+  </div>
+</div>
+
+<!-- Element-Banner-01 -->
+<div class="el-banner-01 flex">
+  <div class="item-01">
+    <div class="content">
+      <h4>New Arrivals</h4>
+      <h3>TRENDS FOR MEN</h3>
+      <a href="shop-shoses-sneaker.html">
+        <button class="btn-shop-now">SHOP NOW<i class="bi bi-arrow-right"></i></button>
+      </a>
+    </div>
+  </div>
+  <div class="item-02">
+    <div class="item-top">
+      <div class="content">
+        <h4>Flash Sale 50% Off</h4>
+        <h3>Classic Style <span>ETT 02</span> Gunmetal</h3>
+        <p>The Only Watches you’ll need...</p>
+        <a href="shop-accesories-watches.html">
+          <button class="btn-shop-now">SHOP NOW<i class="bi bi-arrow-right"></i></button>
+        </a>
+      </div>
+    </div>
+    <div class="item-bottom flex">
+      <div class="item-bottom-left"></div>
+      <div class="item-bottom-right">
+        <div class="content">
+          <h3>LookBook <span>2021</span></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ...</p>
+          <a href="shop-clothing-tops.html" class="btn-shop-now">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="item-03">
+    <div class="content">
+      <h4>Flash Sale</h4>
+      <h3>FOR WOMEN'S</h3>
+      <a href="shop-shoses-hightHeels.html">
+        <button class="btn-shop-now">SHOP NOW<i class="bi bi-arrow-right"></i></button>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- New-Arrivals -->
+<div class="new-arrivals">
+  <div class="container">
+    <h2 class="main-title animateFadeFromBottom">
+      <b>New Arrivals</b>
+      <em>New Arrivals</em>
+    </h2>
+    <div class="slider-new-arrivals product-list owl-carousel owl-theme">
+
+    </div>
+  </div>
+</div>
+
+<!-- Poster -->
+<div class="poster">
+  <div class="content">
+    <h4>
+      Extra 
+      <span><i class="fal fa-star"></i> 30% Off <i class="fal fa-star"></i></span> 
+      Online
+    </h4>
+    <h3>Summer Season Sale</h3>
+    <p>Free shipping on orders over $99</p>
+    <a href="shop-clothing-dresses.html" class="btn-shop-now">SHOP NOW</a>
+  </div>
+</div>
+
+<!-- Featured Articles -->
+<div class="featured-articles">
+  <div class="container">
+    <h2 class="main-title animateFadeFromBottom">
+      <b>Featured Articles</b>
+      <em>Featured Articles</em>
+    </h2>
+    <!-- owl-carousel owl-theme -->
+    <div class="slider-featured-articles flex a-center j-between">
+      <div class="item">
+        <div class="post-calendar flex-column">
+          <span class="post-day">21</span>
+          <span class="post-month">SEP</span>
+        </div>
+        <div class="item-img">
+         <a href="">
+          <img src="images/Page Home/Featured Articles/post01.jpg" alt="">
+         </a>
+        </div>
+        <div class="post-detail">
+          <div class="post-title">
+            <a href="">20% Off Coupon for Cyper Week</a>
+          </div>
+          <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.…</p>
+          </div>
+          <button class="btn-read-more flex a-center">
+            <p>READ MORE</p>
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="post-calendar flex-column">
+          <span class="post-day">21</span>
+          <span class="post-month">SEP</span>
+        </div>
+        <div class="item-img">
+         <a href="">
+          <img src="images/Page Home/Featured Articles/post02.jpg" alt="">
+         </a>
+        </div>
+        <div class="post-detail">
+          <div class="post-title">
+            <a href="">30% Discount for Shoes & Bags</a>
+          </div>
+          <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.…</p>
+          </div>
+          <button class="btn-read-more flex a-center">
+            <p>READ MORE</p>
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="post-calendar flex-column">
+          <span class="post-day">21</span>
+          <span class="post-month">SEP</span>
+        </div>
+        <div class="item-img">
+         <a href="">
+          <img src="images/Page Home/Featured Articles/post03.jpg" alt="">
+         </a>
+        </div>
+        <div class="post-detail">
+          <div class="post-title">
+            <a href="">New Fashion Style</a>
+          </div>
+          <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.…</p>
+          </div>
+          <button class="btn-read-more flex a-center">
+            <p>READ MORE</p>
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="post-calendar flex-column">
+          <span class="post-day">21</span>
+          <span class="post-month">SEP</span>
+        </div>
+        <div class="item-img">
+         <a href="">
+          <img src="images/Page Home/Featured Articles/post04.jpg" alt="">
+         </a>
+        </div>
+        <div class="post-detail">
+          <div class="post-title">
+            <a href="">Summer Season Sale</a>
+          </div>
+          <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.…</p>
+          </div>
+          <button class="btn-read-more flex a-center">
+            <p>READ MORE</p>
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Element-Banner-02 -->
+
+
+<!--Suggest Product -->
+<div class="suggest-product">
+  <div class="container flex a-center j-between">
+    <div class=" suggest-product-box sale-product">
+      <h3>Sale Products</h3>
+      <div class="suggest-product-list suggest-sale-products">
+      </div>
+    </div>
+    <div class=" suggest-product-box latest-products">
+      <h3>Latest Products</h3>
+      <div class="suggest-product-list suggest-latest-products">
+      </div>
+    </div>
+    <div class=" suggest-product-box best-of-the-week">
+      <h3>Best of the Week</h3>
+      <div class="suggest-product-list suggest-best-of-the-week">
+      </div>
+    </div>
+    <div class=" suggest-product-box popular">
+      <h3>Popular</h3>
+      <div class="suggest-product-list suggest-popular">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Element-Banner-03 -->
+<div class="el-banner-03">
+  <div class="container">
+    <div class="content flex a-center j-between">
+      <div class="el-content-01">
+        <h3>GET OUR PERFECT GIFT</h3>
+        <h6>Special Offer Collection</h6>
+        <a href="shop.html">
+          <button class="btn-shop-now">VIEW ALL COLLECTION<i class="bi bi-arrow-right"></i></button>
+        </a>
+      </div>
+      <div class="el-content-02 slider-el-content-02-banner-03 owl-carousel owl-theme">
+        <div class="item">
+          <h5>ON SHOES</h5>
+          <h4>Up to 20% Off</h4>
+          <a href="shop-shoses-sneaker.html">
+            <button class="btn-shop-now">SHOP NOW<i class="bi bi-arrow-right"></i></button>
+          </a>
+        </div>
+        <div class="item">
+          <h5>ON BAGS</h5>
+          <h4>Up to 30% Off</h4>
+          <a href="shop-bags.html">
+            <button class="btn-shop-now">SHOP NOW<i class="bi bi-arrow-right"></i></button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Instagram -->
+<div class="instagram">
+  <h2 class="main-title animateFadeFromBottom">
+    <b>Instagram</b>
+    <em>Instagram</em>
+  </h2>
+  <div class="container">
+     <!--   owl-carousel owl-theme -->
+    <div class="slider-instagram flex a-center j-between">
+      <a href="">
+        <div class="item">
+          <img src="images/Page Home/Instagram/bg-01.jpg" alt="">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="item">
+          <img src="images/Page Home/Instagram/bg-02.jpg" alt="">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+     
+      <a href="">
+        <div class="item">
+          <img src="images/Page Home/Instagram/bg-03.jpg" alt="">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="item">
+          <img src="images/Page Home/Instagram/bg-04.jpg" alt="">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="item">
+          <img src="images/Page Home/Instagram/bg-05.jpg" alt="">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+    
+
+      
+    </div>
+  </div>
+
+
+  <!-- Trademask -->
+<div class="trademark">
+  <div class="container">
+    <div class="slider-trademark-list  owl-carousel owl-theme">
+      <img src="	https://d-themes.com/wordpress/riode/demo-1/wp-content/uploads/sites/5/2020/09/4.png" alt="">
+      <img src="	https://d-themes.com/wordpress/riode/demo-1/wp-content/uploads/sites/5/2020/09/5.png" alt="">
+      <img src="	https://d-themes.com/wordpress/riode/demo-1/wp-content/uploads/sites/5/2020/09/6.png" alt="">
+      <img src="https://d-themes.com/wordpress/riode/demo-1/wp-content/uploads/sites/5/2020/09/1.png" alt="">
+      <img src="	https://d-themes.com/wordpress/riode/demo-1/wp-content/uploads/sites/5/2020/09/2.png" alt="">
+      <img src="	https://d-themes.com/wordpress/riode/demo-1/wp-content/uploads/sites/5/2020/09/3.png" alt="">
+      <img src="	https://d-themes.com/wordpress/riode/demo-1/wp-content/uploads/sites/5/2020/09/4.png" alt="">
+      <img src="	https://d-themes.com/wordpress/riode/demo-1/wp-content/uploads/sites/5/2020/09/5.png" alt="">
+      <img src="	https://d-themes.com/wordpress/riode/demo-1/wp-content/uploads/sites/5/2020/09/6.png" alt="">
+      <img src="	https://d-themes.com/wordpress/riode/demo-1/wp-content/uploads/sites/5/2020/09/1.png" alt="">
+      <img src="	https://d-themes.com/wordpress/riode/demo-1/wp-content/uploads/sites/5/2020/09/2.png" alt="">
+
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top flex j-between">
+      <div class="footer-left flex j-between a-center">
+        <div class="logo">
+          <a href=""><img src="images/logo.png" alt=""></a>
+        </div>
+        <!--  Get In Touch -->
+        <div class="item">
+         <h4>Get In Touch</h4>
+         <ul class="content flex-column">
+           <li class="phone">
+             <h5>PHONE</h5>
+             <a href="">Toll Free (123) 456-7890</a>
+           </li>
+           <li class="email">
+             <h5>EMAIL</h5>
+             <a href="">riode@mail.com</a>
+           </li>
+           <li class="address">
+             <h5>ADDRESS</h5>
+             <p style="color: #fff;">123 Street, City, Country</p>
+           </li>
+           <li class="working-days">
+             <h5>WORKING DAYS / HOURS:</h5>
+             <p style="color: #fff;">Mon - Sun / 9:00 AM - 8:00 PM</p>
+           </li>
+         </ul>
+        </div>
+        <div class="item">
+         <h4>My Account</h4>
+         <ul class="content flex-column">
+           <li><a href="">Contact Us</a></li>
+           <li><a href="">Out Services</a></li>
+           <li><a href="">Payment Methods</a></li>
+           <li><a href="">Services Guide</a></li>
+           <li><a href="">Service Support</a></li>
+           <li><a href="">Privacy</a></li>
+           <li><a href="">About Riode</a></li>
+           <li> <a href="">Our Guarantees</a></li>
+         </ul>
+        </div>
+      </div>
+      <div class="footer-right">
+        <h4>Subscribe Newsletter</h4>
+        <ul class="flex-column">
+         <li><p>Subscribe to Riode eCommerce newsletter to receive timely updates from your favourite products.</p></li>
+         <li class="input-group flex a-center j-between">
+          <input type="email" id="email1" name="email" placeholder="Email address here...">
+          <a  href="" class="btn-subcribe">
+            <p>SUBCRIBE  <i class="bi bi-arrow-right"></i></p>
+          </a>
+        </li>
+        <li class="contact">
+          <ul class="flex">
+            <a href=""><li class="facebook"><i class="fab fa-facebook-f"></i></li></a>
+            <a href=""><li class="twitter"><i class="fab fa-twitter"></i></li></a>
+            <a href=""><li class="instagram"><i class="fab fa-instagram"></i></li></a>
+            <a href=""><li class="google"><i class="fab fa-google-plus-g"></i></li></a>
+            <a href=""><li class="pinterest"><i class="fab fa-pinterest-p"></i></li></a>
+          </ul>
+        </li>
+       </ul>
+      </div>
+    </div>
+    <div class="footer-bottom flex a-center j-between">
+      <p>Copyright © 2021 Riode Store. All Rights Reserved.</p>
+      <div class="pay">
+        <img src="https://d-themes.com/wordpress/riode/sport/wp-content/uploads/sites/97/2021/01/payment-logo.png" alt="">
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/Product/arr-product.js"></script>
+<script src="js/main.js"></script>
+<script src="js/Home/home.js"></script>
+<!-- <script src="js/main.js"></script> -->
+</html>
+
+ <!--  owl-carousel owl-theme -->
+ <!--  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"> -->
